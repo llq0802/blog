@@ -71,7 +71,7 @@ export function PostEditor({ post, tags }: PostEditorProps) {
         const error = await response.json();
         alert(error.message || "保存失败");
       }
-    } catch (error) {
+    } catch {
       alert("保存失败，请重试");
     } finally {
       setIsSubmitting(false);

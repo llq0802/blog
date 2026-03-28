@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, BookOpen, TrendingUp, Clock } from "lucide-react";
 import { prisma } from "@/lib/prisma";
-import { formatDate } from "@/lib/utils";
 import { PostCard } from "@/components/PostCard";
 
 export default async function HomePage() {
