@@ -61,16 +61,11 @@ export function MarkdownContent({ content }: MarkdownContentProps) {
             {children}
           </blockquote>
         ),
-        code({
-          inline,
-          className,
-          children,
-          ...props
-        }: {
+        code({ inline, className, children, ...props }: {
           inline: boolean;
           className?: string;
           children: React.ReactNode;
-          [key: string]: any;
+          [key: string]: React.ReactNode | string | number | boolean | undefined;
         }) {
           const match = /language-(\w+)/.exec(className || '');
           return !inline && match ?
