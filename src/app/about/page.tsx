@@ -24,10 +24,10 @@ export default function AboutPage() {
               </div>
 
               <div className='mb-8'>
-                <h2 className='text-2xl font-bold text-slate-900 dark:text-white mb-2'>博客作者</h2>
+                <h2 className='text-2xl font-bold text-slate-900 dark:text-white mb-2'>李岚清</h2>
                 <p className='text-slate-600 dark:text-slate-400 flex items-center gap-2'>
                   <MapPin className='w-4 h-4' />
-                  中国
+                  中国重庆
                 </p>
               </div>
 
